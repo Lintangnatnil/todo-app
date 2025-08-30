@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>To-do List App</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>To-do List App</h1>
+
+  <!-- Form Tambah Tugas -->
+  <form id="todo-form">
+    <input type="text" id="todo-input" placeholder="Tulis tugas..." required />
+    <input type="date" id="todo-date" />
+    <select id="todo-priority">
+      <option value="low">Low</option>
+      <option value="medium">Medium</option>
+      <option value="high">High</option>
+    </select>
+    <button type="submit">Tambah</button>
+  </form>
+
+  <!-- Filter dan Pencarian -->
+  <div class="controls">
+    <select id="filter">
+      <option value="all">Semua</option>
+      <option value="completed">Selesai</option>
+      <option value="pending">Belum Selesai</option>
+    </select>
+    <input type="text" id="search" placeholder="Cari tugas..." />
+  </div>
+
+  <ul id="todo-list"></ul>
+
+  <script src="script.js"></script>
+</body>
+</html>
